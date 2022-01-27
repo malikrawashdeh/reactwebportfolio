@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Featured from "./components/Featured/Featured";
+import Hero from "./components/Hero/Hero";
+import Navbar from "./components/Navbar/Navbar";
+import Skills from "./components/Skills/Skills";
+import { latest } from "./components/Featured/data";
+import { featuredProjects } from "./components/Featured/data2";
+import Resume from "./components/Resume.js/Resume";
 
+const projSection = featuredProjects.map((sectionData) => (
+  <Featured key={sectionData.projName} {...sectionData} />
+));
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Navbar />
+      <Hero />
+      <Featured {...latest} />
+      <Skills />
+      {projSection}
+      <Resume />
+    </React.Fragment>
   );
 }
 

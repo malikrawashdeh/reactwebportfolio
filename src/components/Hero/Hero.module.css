@@ -1,0 +1,117 @@
+.hero {
+  background: #6e00ff;
+  color: white;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+  height: 35em;
+}
+.hero-pattern {
+  display: none;
+}
+.meet {
+  display: flex;
+  margin: 0 auto;
+
+  width: 200px;
+  font-weight: 400;
+  color: #ff64cb;
+  white-space: nowrap;
+  text-align: left;
+  align-items: center;
+}
+.meet p {
+  margin-right: 0.3em;
+}
+.meet span {
+  margin-right: 0.1em;
+}
+.name {
+  margin-right: unset;
+  margin-left: 0.2em;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: bold;
+}
+.scroll {
+  color: white;
+  text-align: center;
+  font-size: 4em;
+  margin-top: 3em;
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+@keyframes circleAnim {
+  from {
+    transform: translatey(40px);
+    opacity: 1;
+  }
+  to {
+    opacity: 0.3;
+    transform: translatey(0);
+    z-index: 5;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 66% auto;
+    height: 45em;
+    background: unset;
+    padding: 0;
+  }
+  .content {
+    background: #6e00ff;
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+  }
+  .hero-title {
+    font-size: 3em;
+    line-height: 1.2em;
+    text-align: left;
+  }
+  .meet {
+    margin-left: 1em;
+    font-size: 1.3em;
+  }
+  .hero-pattern {
+    display: unset;
+    margin-left: -50%;
+    margin-top: 15%;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  .hero .content {
+    padding: 6em 8em 6em 10em;
+  }
+}
+@media only screen and (min-width: 1550px) {
+  .hero .content {
+    padding: 6em 8em 6em 20em;
+  }
+  .hero h1 {
+    width: 30rem;
+  }
+  .meet p,
+  .meet span {
+    font-size: 2rem;
+  }
+  .hero-pattern {
+    padding-left: 0.1em;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .hero-pattern {
+    padding-left: 0.5em;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .hero-pattern {
+    padding-left: 1.7em;
+  }
+}
+@media only screen and (min-width: 2550px) {
+  .hero-pattern {
+    padding-left: 8.5em;
+  }
+}
