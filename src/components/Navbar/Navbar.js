@@ -34,12 +34,17 @@ const Navbar = () => {
             <a
               href="https://www.linkedin.com/in/malik-rawashdeh-a5678b1b6/"
               target="_blank"
+              rel="noreferrer"
             >
               {linkedin}
             </a>
           </li>
           <li>
-            <a href="https://github.com/malikrawashdeh" target="_blank">
+            <a
+              href="https://github.com/malikrawashdeh"
+              target="_blank"
+              rel="noreferrer"
+            >
               {github}
             </a>
           </li>

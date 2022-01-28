@@ -3,7 +3,6 @@ import classes from "./Skills.module.css";
 import reactLogo from "../../img/reactjsSVG.svg";
 import jsLogo from "../../img/javascript-logo'.svg";
 import pyLogo from "../../img/python.svg";
-import react from "react";
 const Skills = () => {
   return (
     <section id="skills" className={classes.skills}>

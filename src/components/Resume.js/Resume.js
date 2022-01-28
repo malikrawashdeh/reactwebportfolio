@@ -41,7 +41,7 @@ const Resume = () => {
           <div className="picture-resume-wrapper">
             <div className="picture-resume">
               <span>
-                <img src={malikImg} alt="Image of Malik" />
+                <img src={malikImg} alt="Malik" />
               </span>
               <svg version="1.1" viewBox="0 0 350 350">
                 <defs>
@@ -275,12 +275,12 @@ const Resume = () => {
           <div className="section-wrapper clearfix">
             <h3 className="section-title">Skills</h3> {/* YOUR SET OF SKILLS */}
             <ul>
-              <li>Python</li>
+              <li>Python: MatPlotLib, Numpy, Flask</li>
               <li>C++</li>
-              <li>Javascript</li>
+              <li>Javascript: React</li>
               <li>HTML/CSS</li>
               <li>Lua</li>
-              <li>C++</li>
+              <li>UI: Figma</li>
             </ul>
           </div>
           <div className="section-wrapper clearfix">

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import classes from "./Hero.module.css";
 import { heroPattern } from "./heroPattern";
 import Typewriter from "typewriter-effect";
