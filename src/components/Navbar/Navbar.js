@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Navbar.module.css";
 import { github, linkedin } from "./icons";
+import Contact from "../Contact/Contact";
 const Navbar = () => {
+  const [showContact, setShowContact] = useState(false);
+  const contactButtonHandler = (event) => {
+    setShowContact(true);
+  };
   return (
     <div className={classes["nav-container"]}>
+      {showContact && <Contact />}
       <header className={classes.header}>
         <a href="index.html" className={classes.logo}>
           Malik
@@ -21,9 +27,13 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="#contact" className={classes["section-links"]}>
+              <button
+                onClick={contactButtonHandler}
+                href="#contact"
+                className={classes["section-links"]}
+              >
                 Contact
-              </a>
+              </button>
             </li>
           </ul>
         </nav>

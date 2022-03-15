@@ -14,6 +14,7 @@ function App() {
   return (
     <React.Fragment>
       <Navbar />
+
       <Hero />
       <Featured {...latest} />
       <Skills />
