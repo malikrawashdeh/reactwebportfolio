@@ -17,6 +17,18 @@ function App() {
       <Hero />
       <Featured {...latest} />
       <Skills />
+      <div
+        style={{
+          textAlign: "center",
+          marginTop: ".5em",
+          padding: 0,
+          fontSize: "3rem",
+          fontWeight: "bold",
+        }}
+        id="work"
+      >
+        Projects
+      </div>
       {projSection}
       <Resume />
     </React.Fragment>
