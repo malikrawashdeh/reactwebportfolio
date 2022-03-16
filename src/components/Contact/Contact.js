@@ -16,6 +16,8 @@ const Contact = (props) => {
     event.preventDefault();
 
     await postSubmission();
+    props.hideContact();
+    setFormState(initialForm);
   };
   const postSubmission = async () => {
     const payload = {
