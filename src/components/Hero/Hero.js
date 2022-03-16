@@ -43,6 +43,7 @@ const Hero = () => {
             delay: 0.3,
           }}
           className={`${classes["hero-title"]} ${classes.stagger1}`}
+          style={{ lineHeight: "1.2em" }}
         >
           Unique Web Experience by a Student
         </motion.h1>

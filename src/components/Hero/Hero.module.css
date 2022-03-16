@@ -6,6 +6,9 @@
   padding: 4em;
   height: 35em;
 }
+.hero-title {
+  line-height: 2em;
+}
 .hero-pattern {
   display: none;
 }
