@@ -35,6 +35,10 @@ nav {
   text-align: center;
   display: flex;
   align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
 }
 .section-links:active,
 .section-links:hover {

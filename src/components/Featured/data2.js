@@ -18,6 +18,7 @@ export const featuredProjects = [
     ),
     gitHubLink: "https://github.com/malikrawashdeh/acc-csso-website",
     img: proj2img,
+    id: "work",
   },
   {
     subtitle: "Data Dashboard",

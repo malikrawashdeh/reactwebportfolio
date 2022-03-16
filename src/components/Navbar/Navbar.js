@@ -4,12 +4,15 @@ import { github, linkedin } from "./icons";
 import Contact from "../Contact/Contact";
 const Navbar = () => {
   const [showContact, setShowContact] = useState(false);
-  const contactButtonHandler = (event) => {
+  const showContactHandler = (event) => {
     setShowContact(true);
+  };
+  const hideContactHandler = (event) => {
+    setShowContact(false);
   };
   return (
     <div className={classes["nav-container"]}>
-      {showContact && <Contact />}
+      {showContact && <Contact hideContact={hideContactHandler} />}
       <header className={classes.header}>
         <a href="index.html" className={classes.logo}>
           Malik
@@ -28,7 +31,7 @@ const Navbar = () => {
             </li>
             <li>
               <button
-                onClick={contactButtonHandler}
+                onClick={showContactHandler}
                 href="#contact"
                 className={classes["section-links"]}
               >

@@ -3,7 +3,7 @@ import Modal from "./Modal";
 import styles from "./Contact.module.css";
 import axios from "axios";
 import { useState } from "react";
-const Contact = () => {
+const Contact = (props) => {
   const initialForm = {
     senderName: "",
     email: "",
@@ -60,7 +60,14 @@ const Contact = () => {
           id="message"
           value={formState.message}
         />
-        <button>Submit</button>
+        <div className={styles.actions}>
+          <button onClick={submitForm} className={styles.submit}>
+            Submit
+          </button>
+          <button onClick={props.hideContact} className={styles.cancel}>
+            Cancel
+          </button>
+        </div>
       </form>
     </Modal>
   );
